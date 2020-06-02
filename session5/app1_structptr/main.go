@@ -45,6 +45,12 @@ func main() {
 	now = time.Now()
 	showBytes(&arr)
 	fmt.Println(time.Since(now))
+
+	a, b, c := 10, 20, 30
+
+	p1 := newPoint(a, b, c)
+
+	_ = p1
 }
 
 func show(x int64) {}
