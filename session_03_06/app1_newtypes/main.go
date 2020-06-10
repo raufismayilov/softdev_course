@@ -16,7 +16,7 @@ type point struct {
 	x, y, z int
 }
 
-type auto struct {
+type car struct {
 	make, model  string
 	creationdate time.Time
 	color        string
@@ -31,6 +31,16 @@ type triangle struct {
 }
 
 func main() {
+	var arr [10]int
+
+	fmt.Println(arr)
+
+	add(&arr[5], 20)
+
+	fmt.Println(arr)
+
+	return
+
 	var x []int
 	var y intslice
 
@@ -94,7 +104,7 @@ func main() {
 	c.z = 3333333
 
 	fmt.Println(pointToString(c))
-	fmt.Println(pointToString(*d))
+	fmt.Println(pointToString(d))
 }
 
 func showPoint(p point) {
